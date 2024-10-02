@@ -1,10 +1,10 @@
-![fern  strs](fern_structure.jpg)
+![fern  strs](images/fern_structure.jpg)
 ### Collecting spores
 - Spores are ready at different times, usually toward the end of summer. Look for sori on the underside of the fronds. If you use a magnifying glass, you’ll see that fully ripe sporangia look like shiny, round balls or clusters. Choose a frond in which a few of the sporangia have burst open. The rest of the sporangia should be intact and shiny. Fern fronds not used immediately can be sealed in a plastic bag and kept in the refrigerator for up to a week.
-![spore ripeness](ripe_spores.png)
+![spore ripeness](images/ripe_spores.png)
 - Cut a portion of the frond.
 - Lay on paper in a dry place.
-![on paper](spores_on_paper.png)
+![on paper](images/spores_on_paper.png)
 
 ### Sowing spores
 
@@ -16,7 +16,7 @@
    - Sprinkle spores on top of the mix
    - Label tray and cover with plastic or glass
 
-![container](containers.png)
+![container](images/containers.png)
 
 3. Germination conditions:
    - Place tray in container with 5 cm water
@@ -27,7 +27,7 @@
 ### Growing fern
 
 4. Development stages:
-   ![growing](grow_process.jpg)
+   ![growing](images/grow_process.jpg)
    - 3 weeks: Green film appears (prothalli)
    - 6 weeks: Film resembles moss
    - 5-6 months: Tiny heart-shaped gametophytes develop

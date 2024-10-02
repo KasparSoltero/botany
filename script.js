@@ -46,32 +46,28 @@ function addClickListeners() {
     });
 }
 
-function encodeTopicFolder(folder) {
-    return folder.split(' ').map(encodeURIComponent).join('%20');
-}
-
-function processMarkdownImages(markdown, topicFolder) {
-    const encodedFolder = encodeTopicFolder(topicFolder);
-    return markdown.replace(
-        /!\[(.*?)\]\((.*?)\)/g,
-        (match, alt, src) => {
-            if (!src.startsWith('http') && !src.startsWith('/')) {
-                src = `/topics/${encodedFolder}/${encodeURIComponent(src)}`;
-            }
-            return `![${alt}](${src})`;
-        }
-    );
-}
+// function processMarkdownImages(markdown, topicFolder) {
+//     const encodedFolder = encodeTopicFolder(topicFolder);
+//     return markdown.replace(
+//         /!\[(.*?)\]\((.*?)\)/g,
+//         (match, alt, src) => {
+//             if (!src.startsWith('http') && !src.startsWith('/')) {
+//                 src = `/topics/${encodedFolder}/${encodeURIComponent(src)}`;
+//             }
+//             return `![${alt}](${src})`;
+//         }
+//     );
+// }
 
 async function fetchMarkdown(topicFolder) {
     try {
-        const encodedFolder = encodeTopicFolder(topicFolder);
-        const response = await fetch(`topics/${encodedFolder}/content.md`);
+        const response = await fetch(`topics/${topicFolder}/content.md`);
         if (!response.ok) {
             throw new Error('Failed to fetch markdown content');
         }
         const markdown = await response.text();
-        return processMarkdownImages(markdown, topicFolder);
+        // return processMarkdownImages(markdown, topicFolder);
+        return markdown;
     } catch (error) {
         console.error('Error fetching markdown:', error);
         return '**Error loading content**';
