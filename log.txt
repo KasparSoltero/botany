@@ -1,0 +1,24 @@
+Project Title: Dynamic Botany Info Sheet
+Goal: Create a simple, responsive static website for botany course content with dynamic topic loading, deployable on GitHub Pages.
+Present State: The project now has a dynamic structure allowing for easy addition of new topics without modifying HTML.
+
+Structure:
+/
+├── index.html
+├── styles.css
+├── script.js
+├── topics.json
+├── topics/
+│   ├── ecology/
+│   │   ├── content.md
+│   │   └── images/
+│   ├── germination/
+│   │   ├── content.md
+│   │   └── images/
+│   └── taxonomy/
+│       ├── content.md
+│       └── images/
+└── lib/
+└── marked.min.js
+
+Context: The project has been updated to dynamically load topics from a JSON file, allowing for easier addition of new topics without modifying HTML. The JavaScript functionality has been enhanced to fetch and display topics based on the folder structure. The website is now more flexible and maintainable, requiring only updates to the topics.json file and the addition of new topic folders to expand content.

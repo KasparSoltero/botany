@@ -4,8 +4,21 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
 }
 
+.full-width-header {
+    width: 100%;
+    padding: 0;
+}
+.full-width-header h1 {
+    margin: 0;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
 header {
     background-color: #333;
     color: #fff;
@@ -14,14 +27,17 @@ header {
 }
 
 main {
-    max-width: 800px;
+    width: 95%;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 0;
 }
 
 .topic-list {
     list-style-type: none;
     padding: 0;
+    margin: 0;
+    width: 100%;
 }
 
 .topic-title {
@@ -29,22 +45,39 @@ main {
     padding: 1rem;
     margin: 0.5rem 0;
     cursor: pointer;
+    text-align: center;
     transition: background-color 0.3s;
 }
 
 .topic-title:hover {
-    background-color: #ccc;
+    background-color: #bbb;
+}
+.topic-title:active {
+    background-color: #bbb;
 }
 
 .topic-content {
-    display: none;
+    display: none; 
     padding: 1rem;
     background-color: #fff;
     border: 1px solid #ddd;
 }
+.topic-content h3 {
+    margin-top: 0.5em;
+    margin-bottom:0.5em;
+}
+.topic-content ul, .topic-content ol {
+    padding-inline-start: 30px;
+}
+.topic-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
 
 @media (max-width: 600px) {
-    main {
-        padding: 1rem;
+    .topic-content ul, .topic-content ol {
+        padding-inline-start: 10px;
     }
 }
